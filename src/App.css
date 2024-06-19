@@ -1,0 +1,72 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  & > input {
+    padding: 0.5rem;
+    width: 100px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #471747;
+  }
+}
+
+.card {
+  background-color: #1d2e3d;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  box-shadow: 0 0 10px rgba(37, 37, 37, 0.1);
+}
+
+.result {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.result__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    flex-direction: column;
+  }
+}
